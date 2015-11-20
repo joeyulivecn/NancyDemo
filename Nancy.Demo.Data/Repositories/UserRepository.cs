@@ -11,8 +11,8 @@ namespace Nancy.Demo.Data.Repositories
 {
     public class UserRepository : MongoDbRepository<User>
     {
-        public UserRepository()
-            : base(new TestDbContext())
+        public UserRepository(TestDbContext dbContext)
+            : base(dbContext)
         {
 
         }

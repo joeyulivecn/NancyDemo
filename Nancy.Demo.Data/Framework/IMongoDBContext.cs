@@ -11,7 +11,9 @@ namespace Nancy.Demo.Data.Framework
     {
         void RegisterClassMap();
 
-        string ConnectionStringName { get; }
+        IMongoClient Client { get; }
+
+        IMongoDatabase Database { get; }
 
         IMongoCollection<TEntity> GetCollection<TEntity>();
     }

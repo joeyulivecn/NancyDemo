@@ -10,8 +10,8 @@ namespace Nancy.Demo.Data.Repositories
 {
     public class ActivityRepository : MongoDbRepository<Activity>
     {
-        public ActivityRepository()
-            : base(new TestDbContext())
+        public ActivityRepository(TestDbContext dbContext)
+            : base(dbContext)
         {
 
         }

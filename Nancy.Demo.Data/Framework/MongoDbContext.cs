@@ -10,18 +10,25 @@ namespace Nancy.Demo.Data.Framework
 {
     public abstract class MongoDbContext : IMongoDbContext
     {
-        private string _connectionStringName;
+        private IMongoClient _client;
         private IMongoDatabase _database;
 
-        public string ConnectionStringName { get { return _connectionStringName; } }
+        public IMongoClient Client
+        {
+            get { return _client; }
+        }
+
+        public IMongoDatabase Database
+        {
+            get { return _database; }
+        }
 
         public MongoDbContext(string connectionStringName)
         {
-            _connectionStringName = connectionStringName;
             var setting = ConfigurationManager.ConnectionStrings[connectionStringName];
             var mongoUrl = new MongoUrl(setting.ConnectionString);
-            var client = new MongoClient(mongoUrl);
-            _database = client.GetDatabase(mongoUrl.DatabaseName);
+            _client = new MongoClient(mongoUrl);
+            _database = _client.GetDatabase(mongoUrl.DatabaseName);
         }
 
         public IMongoCollection<TEntity> GetCollection<TEntity>()

@@ -38,6 +38,8 @@ namespace NancyDemo.Services
                 {
 
                 });
+
+            builder.RegisterType(typeof(TestDbContext)).AsSelf().SingleInstance();
         }
     }
 }
