@@ -19,7 +19,7 @@ namespace Nancy.Demo.Data.Framework.Repositories
             _collection = mongoDbContext.GetCollection<TEntity>();
         }
 
-        public virtual Task Insert(TEntity entity)
+        public virtual Task Add(TEntity entity)
         {
             return _collection.InsertOneAsync(entity);
         }
@@ -30,9 +30,9 @@ namespace Nancy.Demo.Data.Framework.Repositories
             return _collection.ReplaceOneAsync(filter, entity);
         }
 
-        public virtual Task Delete(TEntity entity)
+        public virtual Task Delete(string id)
         {
-            return _collection.DeleteOneAsync(x => x.Id == entity.Id);
+            return _collection.DeleteOneAsync(x => x.Id == id);
         }
 
         public virtual Task<List<TEntity>> Find(Expression<Func<TEntity, bool>> predicate)
@@ -48,6 +48,11 @@ namespace Nancy.Demo.Data.Framework.Repositories
         public virtual Task<TEntity> GetById(string id)
         {
             return _collection.Find(e => e.Id == id).FirstOrDefaultAsync();
+        }
+
+        public virtual Task<long> Count()
+        {
+            return _collection.CountAsync(FilterDefinition<TEntity>.Empty);
         }
     }
 }

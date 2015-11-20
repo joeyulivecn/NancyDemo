@@ -19,7 +19,7 @@ namespace NancyDemo.Services
 
         public Task AddUser(User user)
         {
-            return _userRepository.Insert(user);
+            return _userRepository.Add(user);
         }
 
         public Task<List<User>> GetUsers()

@@ -9,16 +9,18 @@ namespace Nancy.Demo.Data.Framework.Repositories
 {
     public interface IRepository<TEntity> where TEntity : IEntity
     {
-        Task Insert(TEntity entity);
+        Task Add(TEntity entity);
   
         Task Update(TEntity entity);
- 
-        Task Delete(TEntity entity);
+
+        Task Delete(string id);
   
         Task<List<TEntity>> Find(Expression<Func<TEntity, bool>> predicate);
     
         Task<List<TEntity>> GetAll();
   
         Task<TEntity> GetById(string id);
+
+        Task<long> Count();
     }
 }

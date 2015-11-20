@@ -19,7 +19,7 @@ namespace NancyDemo.Services
 
         public Task AddActivity(Activity activity)
         {
-            return _activityRepository.Insert(activity);
+            return _activityRepository.Add(activity);
         }
     }
 }
