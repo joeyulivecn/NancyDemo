@@ -1,0 +1,7 @@
+2015-11-20 19:33:43.0223 DEBUG ConfigureApplicationContainer
+2015-11-20 19:33:43.2293 DEBUG ApplicationStartup
+2015-11-20 19:33:43.4353 DEBUG ConfigureRequestContainer
+2015-11-20 19:33:43.6623 DEBUG ConfigureRequestContainer
+2015-11-20 19:33:43.6623 DEBUG RequestStartup
+2015-11-20 19:33:47.9123 DEBUG ConfigureRequestContainer
+2015-11-20 19:33:47.9123 DEBUG RequestStartup
