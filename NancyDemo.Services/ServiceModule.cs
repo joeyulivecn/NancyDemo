@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using Nancy.Demo.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +18,18 @@ namespace NancyDemo.Services
             builder.RegisterAssemblyTypes(typeof(ServiceModule).Assembly)
                 .Where(t => t.Name.EndsWith("Service"))
                 .AsImplementedInterfaces()
+                .OnActivated(arg =>
+                {
+
+                })
+                .OnRelease(obj =>
+                {
+
+                });
+
+            builder.RegisterAssemblyTypes(typeof(TestDbContext).Assembly)
+                .Where(t => t.Name.EndsWith("Repository"))
+                .AsSelf()
                 .OnActivated(arg =>
                 {
 
