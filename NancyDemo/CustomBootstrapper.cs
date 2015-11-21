@@ -23,6 +23,8 @@ namespace NancyDemo
             _logger.Debug("ApplicationStartup");
 
             base.ApplicationStartup(container, pipelines);
+
+            StaticConfiguration.DisableErrorTraces = false;
         }
 
         // Perform registration that should have an application lifetime

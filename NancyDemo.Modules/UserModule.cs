@@ -10,6 +10,7 @@ using Nancy.Responses;
 using Newtonsoft.Json;
 using Nancy.Demo.Domain.Interfaces;
 using Nancy.Demo.Domain.Entities;
+using System.IO;
 
 namespace NancyDemo.Modules
 {
@@ -44,6 +45,10 @@ namespace NancyDemo.Modules
 
             Post["/", true] = async (_, token) =>
             {
+                //using (var sr = new StreamReader(this.Request.Body))
+                //{
+                //    var json = sr.ReadToEnd();
+                //}
                 var user = this.Bind<User>();
                 await userService.AddUser(user);
                 return HttpStatusCode.Created;

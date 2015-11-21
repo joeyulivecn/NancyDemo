@@ -10,5 +10,7 @@ namespace Nancy.Demo.Domain.Entities
     public class User : MongoDbEntity
     {
         public string Name { get; set; }
+
+        public string Description2 { get; set; }
     }
 }
