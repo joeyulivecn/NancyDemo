@@ -1,0 +1,5 @@
+D:\visual studio 2013\Projects\NancyDemo\NancyDemo.Web\bin\NancyDemo.Web.dll.config
+D:\visual studio 2013\Projects\NancyDemo\NancyDemo.Web\bin\NancyDemo.Web.dll
+D:\visual studio 2013\Projects\NancyDemo\NancyDemo.Web\bin\NancyDemo.Web.pdb
+D:\visual studio 2013\Projects\NancyDemo\NancyDemo.Web\obj\Debug\NancyDemo.Web.dll
+D:\visual studio 2013\Projects\NancyDemo\NancyDemo.Web\obj\Debug\NancyDemo.Web.pdb

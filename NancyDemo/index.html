@@ -5,6 +5,10 @@
 </head>
 <body ng-controller="AppController">
     <div><h1>{{appTitle}}</h1></div>
+    <h3>Users:</h3>
+    <ul ng-repeat="user in users">
+        <li>{{user.id}}, {{user.name}}, {{user.description2}}</li>
+    </ul>
     <script src="scripts/angular.min.js"></script>
     <script src="app/app.js"></script>
 </body>

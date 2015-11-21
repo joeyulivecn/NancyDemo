@@ -66,6 +66,8 @@ namespace NancyDemo.Modules
                 await userRepository.Delete(_.id);
                 return HttpStatusCode.OK;
             };
+
+            Options["/"] = route => new Response();
         }
     }
 }
