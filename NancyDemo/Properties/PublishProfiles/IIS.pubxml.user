@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\NancyDemoSite</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Autofac.dll">
+      <publishTime>11/10/2015 16:37:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>11/09/2015 12:36:59</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>11/09/2015 12:36:59</publishTime>
+    </File>
+    <File Include="bin/MongoDB.Bson.dll">
+      <publishTime>11/13/2015 13:52:57</publishTime>
+    </File>
+    <File Include="bin/MongoDB.Driver.Core.dll">
+      <publishTime>11/13/2015 13:52:57</publishTime>
+    </File>
+    <File Include="bin/MongoDB.Driver.dll">
+      <publishTime>11/13/2015 13:52:57</publishTime>
+    </File>
+    <File Include="bin/Nancy.Authentication.Token.dll">
+      <publishTime>11/10/2015 12:01:55</publishTime>
+    </File>
+    <File Include="bin/Nancy.Bootstrappers.Autofac.dll">
+      <publishTime>11/10/2015 16:37:24</publishTime>
+    </File>
+    <File Include="bin/Nancy.Demo.Data.dll">
+      <publishTime>11/21/2015 08:39:53</publishTime>
+    </File>
+    <File Include="bin/Nancy.dll">
+      <publishTime>11/09/2015 12:30:36</publishTime>
+    </File>
+    <File Include="bin/Nancy.Owin.dll">
+      <publishTime>11/09/2015 12:33:55</publishTime>
+    </File>
+    <File Include="bin/NancyDemo.dll">
+      <publishTime>11/21/2015 08:39:56</publishTime>
+    </File>
+    <File Include="bin/NancyDemo.Modules.dll">
+      <publishTime>11/21/2015 08:39:55</publishTime>
+    </File>
+    <File Include="bin/NancyDemo.Services.dll">
+      <publishTime>11/21/2015 08:39:54</publishTime>
+    </File>
+    <File Include="bin/NLog.config">
+      <publishTime>11/12/2015 16:46:00</publishTime>
+    </File>
+    <File Include="bin/NLog.dll">
+      <publishTime>11/12/2015 11:08:19</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>11/09/2015 12:33:55</publishTime>
+    </File>
+    <File Include="index.html">
+      <publishTime>11/09/2015 14:30:38</publishTime>
+    </File>
+    <File Include="NLog.config">
+      <publishTime>11/12/2015 16:46:00</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>11/12/2015 15:20:36</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/21/2015 08:39:57</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

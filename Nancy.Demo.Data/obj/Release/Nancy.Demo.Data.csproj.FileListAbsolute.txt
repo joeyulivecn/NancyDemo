@@ -1,0 +1,10 @@
+D:\visual studio 2013\Projects\NancyDemo\Nancy.Demo.Data\bin\Release\Nancy.Demo.Data.dll
+D:\visual studio 2013\Projects\NancyDemo\Nancy.Demo.Data\bin\Release\Nancy.Demo.Data.pdb
+D:\visual studio 2013\Projects\NancyDemo\Nancy.Demo.Data\bin\Release\MongoDB.Bson.dll
+D:\visual studio 2013\Projects\NancyDemo\Nancy.Demo.Data\bin\Release\MongoDB.Driver.Core.dll
+D:\visual studio 2013\Projects\NancyDemo\Nancy.Demo.Data\bin\Release\MongoDB.Driver.dll
+D:\visual studio 2013\Projects\NancyDemo\Nancy.Demo.Data\bin\Release\MongoDB.Bson.xml
+D:\visual studio 2013\Projects\NancyDemo\Nancy.Demo.Data\bin\Release\MongoDB.Driver.xml
+D:\visual studio 2013\Projects\NancyDemo\Nancy.Demo.Data\obj\Release\Nancy.Demo.Data.csprojResolveAssemblyReference.cache
+D:\visual studio 2013\Projects\NancyDemo\Nancy.Demo.Data\obj\Release\Nancy.Demo.Data.dll
+D:\visual studio 2013\Projects\NancyDemo\Nancy.Demo.Data\obj\Release\Nancy.Demo.Data.pdb

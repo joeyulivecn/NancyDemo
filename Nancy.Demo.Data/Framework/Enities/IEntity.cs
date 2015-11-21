@@ -8,9 +8,13 @@ using System.Threading.Tasks;
 
 namespace Nancy.Demo.Data
 {
-    public interface IEntity
+    public interface IEntity<Tkey>
     {
-        [BsonId]
+        Tkey Id { get; set; }
+    }
+
+    public interface IEntity : IEntity<string>
+    {
         string Id { get; set; }
     }
 }

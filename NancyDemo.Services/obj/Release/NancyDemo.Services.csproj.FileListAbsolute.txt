@@ -1,0 +1,14 @@
+D:\visual studio 2013\Projects\NancyDemo\NancyDemo.Services\bin\Release\NancyDemo.Services.dll
+D:\visual studio 2013\Projects\NancyDemo\NancyDemo.Services\bin\Release\NancyDemo.Services.pdb
+D:\visual studio 2013\Projects\NancyDemo\NancyDemo.Services\bin\Release\Autofac.dll
+D:\visual studio 2013\Projects\NancyDemo\NancyDemo.Services\bin\Release\Nancy.Demo.Data.dll
+D:\visual studio 2013\Projects\NancyDemo\NancyDemo.Services\bin\Release\MongoDB.Driver.dll
+D:\visual studio 2013\Projects\NancyDemo\NancyDemo.Services\bin\Release\MongoDB.Bson.dll
+D:\visual studio 2013\Projects\NancyDemo\NancyDemo.Services\bin\Release\MongoDB.Driver.Core.dll
+D:\visual studio 2013\Projects\NancyDemo\NancyDemo.Services\bin\Release\Nancy.Demo.Data.pdb
+D:\visual studio 2013\Projects\NancyDemo\NancyDemo.Services\bin\Release\Autofac.xml
+D:\visual studio 2013\Projects\NancyDemo\NancyDemo.Services\bin\Release\MongoDB.Driver.xml
+D:\visual studio 2013\Projects\NancyDemo\NancyDemo.Services\bin\Release\MongoDB.Bson.xml
+D:\visual studio 2013\Projects\NancyDemo\NancyDemo.Services\obj\Release\NancyDemo.Services.csprojResolveAssemblyReference.cache
+D:\visual studio 2013\Projects\NancyDemo\NancyDemo.Services\obj\Release\NancyDemo.Services.dll
+D:\visual studio 2013\Projects\NancyDemo\NancyDemo.Services\obj\Release\NancyDemo.Services.pdb

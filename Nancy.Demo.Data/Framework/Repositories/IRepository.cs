@@ -15,7 +15,10 @@ namespace Nancy.Demo.Data.Framework.Repositories
 
         Task Delete(string id);
   
-        Task<List<TEntity>> Find(Expression<Func<TEntity, bool>> predicate);
+        Task<List<TEntity>> Get(Expression<Func<TEntity, bool>> predicate);
+
+        Task<List<TEntity>> Get(Expression<Func<TEntity, bool>> filter, int limit, int offset,
+            Expression<Func<TEntity, object>> sortKeySelector, bool ascending = true);
     
         Task<List<TEntity>> GetAll();
   

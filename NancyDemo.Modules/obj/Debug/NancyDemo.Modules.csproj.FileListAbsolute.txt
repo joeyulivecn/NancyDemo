@@ -18,3 +18,5 @@ D:\visual studio 2013\Projects\NancyDemo\NancyDemo.Modules\bin\Debug\MongoDB.Dri
 D:\visual studio 2013\Projects\NancyDemo\NancyDemo.Modules\bin\Debug\Nancy.Demo.Data.pdb
 D:\visual studio 2013\Projects\NancyDemo\NancyDemo.Modules\bin\Debug\MongoDB.Bson.xml
 D:\visual studio 2013\Projects\NancyDemo\NancyDemo.Modules\bin\Debug\MongoDB.Driver.xml
+D:\visual studio 2013\Projects\NancyDemo\NancyDemo.Modules\bin\Debug\Newtonsoft.Json.dll
+D:\visual studio 2013\Projects\NancyDemo\NancyDemo.Modules\bin\Debug\Newtonsoft.Json.xml

@@ -35,9 +35,21 @@ namespace Nancy.Demo.Data.Framework.Repositories
             return _collection.DeleteOneAsync(x => x.Id == id);
         }
 
-        public virtual Task<List<TEntity>> Find(Expression<Func<TEntity, bool>> predicate)
+        public virtual Task<List<TEntity>> Get(Expression<Func<TEntity, bool>> predicate)
         {
             return _collection.Find(predicate).ToListAsync();
+        }
+
+        public virtual async Task<List<TEntity>> Get(Expression<Func<TEntity, bool>> filter, int limit, int offset,
+            Expression<Func<TEntity, object>> sortKeySelector, bool ascending = true)
+        {
+            var sortDefinition = ascending ? Builders<TEntity>.Sort.Ascending(sortKeySelector)
+                : Builders<TEntity>.Sort.Descending(sortKeySelector);
+            var options = new FindOptions<TEntity> { Limit = limit, Skip = offset, Sort = sortDefinition };
+            using (var cursor = await _collection.FindAsync<TEntity>(filter, options))
+            {
+                return await cursor.ToListAsync();
+            }
         }
 
         public virtual Task<List<TEntity>> GetAll()
