@@ -6,16 +6,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Nancy.ModelBinding;
-using Nancy.Demo.Data.Entities;
 using Nancy.Responses;
-using Nancy.Demo.Data.Repositories;
 using Newtonsoft.Json;
+using Nancy.Demo.Domain.Interfaces;
+using Nancy.Demo.Domain.Entities;
 
 namespace NancyDemo.Modules
 {
     public class UserModule : NancyModule
     {
-        public UserModule(IUserService userService, UserRepository userRepository)
+        public UserModule(IUserService userService, IUserRepository userRepository)
             : base("/api/v1/users")
         {
             Before += ctx =>

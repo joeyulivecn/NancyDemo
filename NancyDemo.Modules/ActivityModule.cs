@@ -6,8 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Nancy.ModelBinding;
-using Nancy.Demo.Data.Entities;
 using System.IO;
+using Nancy.Demo.Domain.Entities;
 
 namespace NancyDemo.Modules
 {

@@ -1,5 +1,7 @@
 ﻿using Autofac;
 using Nancy.Demo.Data;
+using Nancy.Demo.Data.Framework.Repositories;
+using Nancy.Demo.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,17 +29,6 @@ namespace NancyDemo.Services
 
                 });
 
-            builder.RegisterAssemblyTypes(typeof(TestDbContext).Assembly)
-                .Where(t => t.Name.EndsWith("Repository"))
-                .AsSelf()
-                .OnActivated(arg =>
-                {
-
-                })
-                .OnRelease(obj =>
-                {
-
-                });
 
             builder.RegisterType(typeof(TestDbContext)).AsSelf().SingleInstance();
         }

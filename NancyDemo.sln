@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NancyDemo.Services", "Nancy
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nancy.Demo.Data", "Nancy.Demo.Data\Nancy.Demo.Data.csproj", "{1AB86AFD-EF97-46C2-9872-8543D3655BFB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NancyDemo.Data.Framework", "NancyDemo.Data.Framework\NancyDemo.Data.Framework.csproj", "{456B2871-3D7F-46CA-BE25-6E629A2821E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nancy.Demo.Domain", "Nancy.Demo.Domain\Nancy.Demo.Domain.csproj", "{ED9764C8-7D74-4235-9A08-D4A7FA12C448}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{1AB86AFD-EF97-46C2-9872-8543D3655BFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1AB86AFD-EF97-46C2-9872-8543D3655BFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1AB86AFD-EF97-46C2-9872-8543D3655BFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{456B2871-3D7F-46CA-BE25-6E629A2821E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{456B2871-3D7F-46CA-BE25-6E629A2821E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{456B2871-3D7F-46CA-BE25-6E629A2821E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{456B2871-3D7F-46CA-BE25-6E629A2821E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED9764C8-7D74-4235-9A08-D4A7FA12C448}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED9764C8-7D74-4235-9A08-D4A7FA12C448}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED9764C8-7D74-4235-9A08-D4A7FA12C448}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED9764C8-7D74-4235-9A08-D4A7FA12C448}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

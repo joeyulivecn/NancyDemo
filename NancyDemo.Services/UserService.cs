@@ -1,5 +1,5 @@
-﻿using Nancy.Demo.Data.Entities;
-using Nancy.Demo.Data.Repositories;
+﻿using Nancy.Demo.Domain.Entities;
+using Nancy.Demo.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,9 +10,9 @@ namespace NancyDemo.Services
 {
     public class UserService : IUserService
     {
-        private UserRepository _userRepository;
+        private IUserRepository _userRepository;
 
-        public UserService(UserRepository userRepository)
+        public UserService(IUserRepository userRepository)
         {
             _userRepository = userRepository;
         }

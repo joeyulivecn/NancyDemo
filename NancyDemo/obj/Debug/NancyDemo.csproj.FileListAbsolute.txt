@@ -34,3 +34,7 @@ D:\visual studio 2013\Projects\NancyDemo\NancyDemo\bin\MongoDB.Bson.xml
 D:\visual studio 2013\Projects\NancyDemo\NancyDemo\bin\MongoDB.Driver.xml
 D:\visual studio 2013\Projects\NancyDemo\NancyDemo\bin\Newtonsoft.Json.dll
 D:\visual studio 2013\Projects\NancyDemo\NancyDemo\bin\Newtonsoft.Json.xml
+D:\visual studio 2013\Projects\NancyDemo\NancyDemo\bin\Nancy.Demo.Domain.dll
+D:\visual studio 2013\Projects\NancyDemo\NancyDemo\bin\NancyDemo.Data.Framework.dll
+D:\visual studio 2013\Projects\NancyDemo\NancyDemo\bin\Nancy.Demo.Domain.pdb
+D:\visual studio 2013\Projects\NancyDemo\NancyDemo\bin\NancyDemo.Data.Framework.pdb

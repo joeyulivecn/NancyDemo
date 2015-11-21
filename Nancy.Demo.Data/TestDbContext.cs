@@ -9,8 +9,7 @@ namespace Nancy.Demo.Data
 {
     public class TestDbContext : MongoDbContext
     {
-        public TestDbContext()
-            : base("TestDbContext")
+        public TestDbContext() : base("TestDbContext")
         {
 
         }

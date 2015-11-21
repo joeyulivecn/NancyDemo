@@ -8,3 +8,9 @@ D:\visual studio 2013\Projects\NancyDemo\Nancy.Demo.Data\bin\Debug\MongoDB.Drive
 D:\visual studio 2013\Projects\NancyDemo\Nancy.Demo.Data\bin\Debug\MongoDB.Driver.dll
 D:\visual studio 2013\Projects\NancyDemo\Nancy.Demo.Data\bin\Debug\MongoDB.Bson.xml
 D:\visual studio 2013\Projects\NancyDemo\Nancy.Demo.Data\bin\Debug\MongoDB.Driver.xml
+D:\visual studio 2013\Projects\NancyDemo\Nancy.Demo.Data\bin\Debug\NancyDemo.Data.Framework.dll
+D:\visual studio 2013\Projects\NancyDemo\Nancy.Demo.Data\bin\Debug\NancyDemo.Data.Framework.pdb
+D:\visual studio 2013\Projects\NancyDemo\Nancy.Demo.Data\bin\Debug\Nancy.Demo.Domain.dll
+D:\visual studio 2013\Projects\NancyDemo\Nancy.Demo.Data\bin\Debug\Nancy.Demo.Domain.pdb
+D:\visual studio 2013\Projects\NancyDemo\Nancy.Demo.Data\bin\Debug\Autofac.dll
+D:\visual studio 2013\Projects\NancyDemo\Nancy.Demo.Data\bin\Debug\Autofac.xml

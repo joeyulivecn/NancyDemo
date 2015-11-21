@@ -30,14 +30,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MongoDB.Bson">
-      <HintPath>..\packages\MongoDB.Bson.2.1.1\lib\net45\MongoDB.Bson.dll</HintPath>
-    </Reference>
-    <Reference Include="MongoDB.Driver">
-      <HintPath>..\packages\MongoDB.Driver.2.1.1\lib\net45\MongoDB.Driver.dll</HintPath>
-    </Reference>
-    <Reference Include="MongoDB.Driver.Core">
-      <HintPath>..\packages\MongoDB.Driver.Core.2.1.1\lib\net45\MongoDB.Driver.Core.dll</HintPath>
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -49,23 +43,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\Activity.cs" />
-    <Compile Include="Framework\Enities\IEntity.cs" />
-    <Compile Include="Entities\User.cs" />
-    <Compile Include="Framework\Enities\MongoDbEntity.cs" />
-    <Compile Include="Framework\IMongoDbContext.cs" />
-    <Compile Include="Framework\MongoDbContext.cs" />
-    <Compile Include="Framework\Repositories\IRepository.cs" />
-    <Compile Include="Framework\Repositories\MongoDbRepository.cs" />
+    <Compile Include="DataModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ActivityRepository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
     <Compile Include="TestDbContext.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Nancy.Demo.Domain\Nancy.Demo.Domain.csproj">
+      <Project>{ed9764c8-7d74-4235-9a08-d4a7fa12c448}</Project>
+      <Name>Nancy.Demo.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NancyDemo.Data.Framework\NancyDemo.Data.Framework.csproj">
+      <Project>{456b2871-3d7f-46ca-be25-6e629a2821e5}</Project>
+      <Name>NancyDemo.Data.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

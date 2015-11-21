@@ -1,5 +1,5 @@
-﻿using Nancy.Demo.Data.Entities;
-using Nancy.Demo.Data.Repositories;
+﻿using Nancy.Demo.Domain.Entities;
+using Nancy.Demo.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,9 +10,9 @@ namespace NancyDemo.Services
 {
     public class ActivityService : IActivityService
     {
-        private ActivityRepository _activityRepository;
+        private IActivityRepository _activityRepository;
 
-        public ActivityService(ActivityRepository activityRepository)
+        public ActivityService(IActivityRepository activityRepository)
         {
             _activityRepository = activityRepository;
         }

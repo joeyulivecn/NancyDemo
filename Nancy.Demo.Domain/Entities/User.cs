@@ -1,11 +1,11 @@
-﻿using System;
+﻿using Nancy.Demo.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MongoDB.Bson;
 
-namespace Nancy.Demo.Data.Entities
+namespace Nancy.Demo.Domain.Entities
 {
     public class User : MongoDbEntity
     {

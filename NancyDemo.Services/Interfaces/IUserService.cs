@@ -1,4 +1,4 @@
-﻿using Nancy.Demo.Data.Entities;
+﻿using Nancy.Demo.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;

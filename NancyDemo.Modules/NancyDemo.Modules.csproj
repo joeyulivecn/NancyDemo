@@ -62,9 +62,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Nancy.Demo.Data\Nancy.Demo.Data.csproj">
-      <Project>{1ab86afd-ef97-46c2-9872-8543d3655bfb}</Project>
-      <Name>Nancy.Demo.Data</Name>
+    <ProjectReference Include="..\Nancy.Demo.Domain\Nancy.Demo.Domain.csproj">
+      <Project>{ed9764c8-7d74-4235-9a08-d4a7fa12c448}</Project>
+      <Name>Nancy.Demo.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NancyDemo.Data.Framework\NancyDemo.Data.Framework.csproj">
+      <Project>{456b2871-3d7f-46ca-be25-6e629a2821e5}</Project>
+      <Name>NancyDemo.Data.Framework</Name>
     </ProjectReference>
     <ProjectReference Include="..\NancyDemo.Services\NancyDemo.Services.csproj">
       <Project>{16d1ccc4-3966-4201-8d6a-f0cbd29c1b94}</Project>

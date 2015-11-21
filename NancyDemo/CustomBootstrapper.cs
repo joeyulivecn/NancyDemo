@@ -47,7 +47,7 @@ namespace NancyDemo
             //{
             //    builder.RegisterAssemblyTypes(asm).Where(t => t.Name.EndsWith("Service")).AsImplementedInterfaces();
             //}
-
+            builder.RegisterModule<Nancy.Demo.Data.DataModule>();
             builder.RegisterModule<NancyDemo.Services.ServiceModule>();
 
             builder.RegisterType<Tokenizer>().As<ITokenizer>();
