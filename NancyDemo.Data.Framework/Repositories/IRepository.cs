@@ -9,21 +9,21 @@ namespace Nancy.Demo.Data.Framework.Repositories
 {
     public interface IRepository<TEntity> where TEntity : IEntity
     {
-        Task Add(TEntity entity);
-  
-        Task Update(TEntity entity);
+        Task AddAsync(TEntity entity);
 
-        Task Delete(string id);
-  
-        Task<List<TEntity>> Get(Expression<Func<TEntity, bool>> predicate);
+        Task UpdateAsync(TEntity entity);
 
-        Task<List<TEntity>> Get(Expression<Func<TEntity, bool>> filter, int limit, int offset,
+        Task DeleteAsync(string id);
+
+        Task<List<TEntity>> GetAsync(Expression<Func<TEntity, bool>> predicate);
+
+        Task<List<TEntity>> GetAsync(Expression<Func<TEntity, bool>> filter, int limit, int offset,
             Expression<Func<TEntity, object>> sortKeySelector, bool ascending = true);
-    
-        Task<List<TEntity>> GetAll();
-  
-        Task<TEntity> GetById(string id);
 
-        Task<long> Count();
+        Task<List<TEntity>> GetAllAsync();
+
+        Task<TEntity> GetByIdAsync(string id);
+
+        Task<long> CountAsync();
     }
 }

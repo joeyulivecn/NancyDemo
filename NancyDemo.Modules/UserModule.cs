@@ -39,7 +39,7 @@ namespace NancyDemo.Modules
                 int limit = this.Request.Query.limit;
                 int offset = this.Request.Query.offset;
 
-                var users = await userRepository.Get(u => true, limit, offset, u => u.Name, true);
+                var users = await userRepository.GetAsync(u => true, limit, offset, u => u.Name, true);
                 return users;
             };
 
@@ -57,13 +57,13 @@ namespace NancyDemo.Modules
             Put["/{id}", true] = async (_, token) =>
             {
                 var user = this.Bind<User>();
-                await userRepository.Update(user);
+                await userRepository.UpdateAsync(user);
                 return HttpStatusCode.OK;
             };
 
             Delete["/{id}", true] = async (_, token) =>
             {
-                await userRepository.Delete(_.id);
+                await userRepository.DeleteAsync(_.id);
                 return HttpStatusCode.OK;
             };
 
