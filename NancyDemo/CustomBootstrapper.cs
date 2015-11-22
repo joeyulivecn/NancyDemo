@@ -25,6 +25,7 @@ namespace NancyDemo
             base.ApplicationStartup(container, pipelines);
 
             StaticConfiguration.DisableErrorTraces = false;
+            StaticConfiguration.EnableRequestTracing = true;
         }
 
         // Perform registration that should have an application lifetime
@@ -76,6 +77,16 @@ namespace NancyDemo
         protected override DiagnosticsConfiguration DiagnosticsConfiguration
         {
             get { return new DiagnosticsConfiguration { Password = @"A2\6mVtH/XRT\p,B" }; }
+        }
+
+        protected override void ConfigureConventions(Nancy.Conventions.NancyConventions nancyConventions)
+        {
+            base.ConfigureConventions(nancyConventions);
+
+            this.Conventions.AcceptHeaderCoercionConventions.Add((acceptHeaders, ctx) =>
+            {
+                return acceptHeaders;
+            });
         }
     }
 }

@@ -57,14 +57,15 @@ namespace NancyDemo.Modules
             Put["/{id}", true] = async (_, token) =>
             {
                 var user = this.Bind<User>();
-                await userRepository.UpdateAsync(user);
-                return HttpStatusCode.OK;
+                bool success = await userRepository.UpdateAsync(user);
+                return success ? HttpStatusCode.OK : HttpStatusCode.BadRequest;
             };
 
             Delete["/{id}", true] = async (_, token) =>
             {
-                await userRepository.DeleteAsync(_.id);
-                return HttpStatusCode.OK;
+                string id = _.id;
+                bool success = await userRepository.DeleteAsync(id);
+                return success ? HttpStatusCode.OK : HttpStatusCode.BadRequest;
             };
 
             Options["/"] = route => new Response();

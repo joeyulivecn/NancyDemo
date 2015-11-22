@@ -17,7 +17,7 @@ namespace NancyDemo.Modules
             this.RequiresClaims(new string[] { "admin1" });
 
             Before += ctx => {
-                return null;
+                return (this.Context.CurrentUser == null) ? new HtmlResponse(HttpStatusCode.Unauthorized) : null;
             };
 
             Get["/Hello"] = parameters =>

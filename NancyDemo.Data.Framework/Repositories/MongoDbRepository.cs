@@ -24,20 +24,31 @@ namespace Nancy.Demo.Data.Framework.Repositories
             return _collection.InsertOneAsync(entity);
         }
 
-        public virtual Task UpdateAsync(TEntity entity)
+        public virtual async Task<bool> UpdateAsync(TEntity entity)
         {
             var filter = new BsonDocument("_id", entity.Id);
-            return _collection.ReplaceOneAsync(filter, entity);
+            var result = await _collection.ReplaceOneAsync(filter, entity);
+            return result.ModifiedCount > 0;
         }
 
-        public virtual Task DeleteAsync(string id)
+        public virtual async Task<bool> DeleteAsync(string id)
         {
-            return _collection.DeleteOneAsync(x => x.Id == id);
+            var result = await _collection.DeleteOneAsync(x => x.Id == id);
+            return result.DeletedCount > 0;
         }
 
         public virtual Task<List<TEntity>> GetAsync(Expression<Func<TEntity, bool>> predicate)
         {
             return _collection.Find(predicate).ToListAsync();
+        }
+
+        public virtual async Task<List<TEntity>> GetAsync(Expression<Func<TEntity, bool>> filter, int limit, int offset)
+        {
+            var options = new FindOptions<TEntity> { Limit = limit, Skip = offset };
+            using (var cursor = await _collection.FindAsync<TEntity>(filter, options))
+            {
+                return await cursor.ToListAsync();
+            }
         }
 
         public virtual async Task<List<TEntity>> GetAsync(Expression<Func<TEntity, bool>> filter, int limit, int offset,

@@ -20,7 +20,7 @@ namespace NancyDemo.Modules
                 var userName = this.Request.Form.UserName;
                 var password = this.Request.Form.Password;
 
-                var userIdentity = new LoginUser();
+                var userIdentity = new UserIdentity();
 
                 var token = tokenizer.Tokenize(userIdentity, Context);
 
@@ -44,7 +44,7 @@ namespace NancyDemo.Modules
         }
     }
 
-    public class LoginUser : IUserIdentity
+    public class UserIdentity : IUserIdentity
     {
 
         public IEnumerable<string> Claims

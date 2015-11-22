@@ -11,11 +11,13 @@ namespace Nancy.Demo.Data.Framework.Repositories
     {
         Task AddAsync(TEntity entity);
 
-        Task UpdateAsync(TEntity entity);
+        Task<bool> UpdateAsync(TEntity entity);
 
-        Task DeleteAsync(string id);
+        Task<bool> DeleteAsync(string id);
 
         Task<List<TEntity>> GetAsync(Expression<Func<TEntity, bool>> predicate);
+
+        Task<List<TEntity>> GetAsync(Expression<Func<TEntity, bool>> filter, int limit, int offset);
 
         Task<List<TEntity>> GetAsync(Expression<Func<TEntity, bool>> filter, int limit, int offset,
             Expression<Func<TEntity, object>> sortKeySelector, bool ascending = true);
