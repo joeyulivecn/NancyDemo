@@ -26,6 +26,12 @@ namespace NancyDemo
 
             StaticConfiguration.DisableErrorTraces = false;
             StaticConfiguration.EnableRequestTracing = true;
+
+            pipelines.OnError.AddItemToEndOfPipeline((ctx, ex) =>
+            {
+                _logger.Error("Unhandled Exception: " + ctx.Request.Url + " : " + ex);
+                return null;
+            });
         }
 
         // Perform registration that should have an application lifetime
@@ -70,6 +76,7 @@ namespace NancyDemo
         protected override void RequestStartup(ILifetimeScope container, Nancy.Bootstrapper.IPipelines pipelines, NancyContext context)
         {
             _logger.Debug("RequestStartup");
+
             base.RequestStartup(container, pipelines, context);
             TokenAuthentication.Enable(pipelines, new TokenAuthenticationConfiguration(container.Resolve<ITokenizer>()));
         }

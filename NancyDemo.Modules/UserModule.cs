@@ -64,7 +64,7 @@ namespace NancyDemo.Modules
             Delete["/{id}", true] = async (_, token) =>
             {
                 string id = _.id;
-                bool success = await userRepository.DeleteAsync(id);
+                bool success = await userRepository.DeleteAsync(_.id);
                 return success ? HttpStatusCode.OK : HttpStatusCode.BadRequest;
             };
 
